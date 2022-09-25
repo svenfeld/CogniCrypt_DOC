@@ -1,6 +1,8 @@
 package de.upb.docgen;
 
 
+import java.io.File;
+
 /**
  * @author Sven Feldmann
  */
@@ -23,7 +25,7 @@ public class DocSettings {
     private boolean booleanG = true;
 
     private DocSettings() {
-
+        
     }
 
     public static DocSettings getInstance() {
@@ -116,7 +118,6 @@ public class DocSettings {
                 case "--rulesdir":
                     setRulesetPathDir(settings[i+1]);
                     i++;
-                    mandatorySettings++;
                     break;
                 case "--reportpath":
                     setReportDirectory(settings[i+1]);
@@ -126,12 +127,10 @@ public class DocSettings {
                 case "--ftltemplatespath":
                     setFTLTemplatesPath(settings[i+1]);
                     i++;
-                    mandatorySettings++;
                     break;
                 case "--langtemplatespath":
                     setLangTemplatesPath(settings[i+1]);
                     i++;
-                    mandatorySettings++;
                     break;
                 case "--booleana":
                     setBooleanA(false);
@@ -159,9 +158,9 @@ public class DocSettings {
                     System.exit(255);
             }
         }
-        if(mandatorySettings != 4) {
+        if(mandatorySettings != 1) {
             showErrorMessage();
-            System.exit(255);
+           System.exit(255);
         }
     }
 
@@ -169,9 +168,6 @@ public class DocSettings {
         String errorMessage = "An error occurred while trying to parse the CLI arguments.\n"
                 +"The default command for running CogniCryptDOC is: \n"+
                 "java -jar <jar_location_of_CogniCryptDOC> \\\r\n"+
-                " 		--rulesDir <absolute_path_to_CrySL_rules> \\\r\n" +
-                " 		--FTLtemplatesPath <absolute_path_to_ftl_templates> \\\r\n" +
-                " 		--LANGtemplatesPath <absolute_path_to_lang_templates> \\\r\n" +
                 "       --reportPath <absolute_path_to_generate_documentation>\n";
         System.out.println(errorMessage);
     }
@@ -180,11 +176,11 @@ public class DocSettings {
         String errorMessage = "An error occurred while trying to parse the CLI argument: "+arg+".\n"
                 +"The default command for running CogniCryptDOC is: \n"+
                 "java -jar <jar_location_of_CogniCryptDOC> \\\r\n"+
-                " 		--rulesDir <absolute_path_to_CrySL_rules> \\\r\n" +
-                " 		--templatesPath <absolute_path_to_ftl_templates> \\\r\n" +
-                " 		--LANGtemplatesPath <absolute_path_to_lang_templates> \\\r\n" +
-                "       --reportPath <absolute_path_to_generate_documentation>\n"
-                + "\nAdditional arguments that can be used are:\n"
+                "       --reportPath <absolute_path_to_generate_documentation>\n"+
+                 "\nAdditional arguments that can be used are:\n"
+                +"--rulesDir <absolute_path_to_CrySL_rules> \\\r\n" +
+                "--templatesPath <absolute_path_to_ftl_templates> \\\r\n" +
+                "--LANGtemplatesPath <absolute_path_to_lang_templates> \\\r\n"
                 + "--booleanA <To hide state machine graph>\n"
                 + "--booleanB <To hide help>\n"
                 + "--booleanC <To hide dependency trees>\n"
