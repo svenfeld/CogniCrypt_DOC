@@ -26,14 +26,17 @@ The jar is found in the generated target folder.
 
 ## Usage
 
-CogniCryptDOC requires four arguments:
+CogniCryptDOC requires one argument:
 
 ```
 java -jar <path-to-docgen-jar> 
-      --rulesDir <absolute-path-to-crysl-source-code-format-rules> 
-      --FTLtemplatesPath <absolute_path_to_ftl_templates>
-      --LANGtemplatesPath <absolute_path_to_lang_templates>
       --reportPath <absolute_path_to_generate_documentation>
+```
+The jar that is build by the maven command contains default CrySL rules, FTLTemplates and LangTemplates. To load any of these from other paths provide the following arguments.
+```
+--rulesDir <absolute-path-to-crysl-source-code-format-rules> 
+--FTLtemplatesPath <absolute_path_to_ftl_templates>
+--LANGtemplatesPath <absolute_path_to_lang_templates>
 ```
 
 By default are all features of the html-based documentation enabled. To turn off features speficy the following additional arguments:
