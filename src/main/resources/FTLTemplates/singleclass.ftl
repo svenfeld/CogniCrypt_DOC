@@ -409,6 +409,7 @@
                 <b>nevertypeof(object, type)</b> forbid object to be type.
                 <b>callTo(method)</b> require call to method.
                 <b>noCallTo(method)</b> forbid call to method.
+                There might be additional comments regarding CrySL rule design choices.
             </p>
         </div>
         <p class="pre" style="white-space: pre-line;">The CrySL rule on <a target="_blank" rel="noopener noreferrer"
