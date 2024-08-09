@@ -95,7 +95,7 @@
                             <outputDirectory>src/main/resources/CrySLRules</outputDirectory> <!-- This is where the rules will be extracted -->
                             <resources>
                                 <resource>
-                                    <directory>${project.build.directory}/generated-resources</directory>
+                                    <directory>${project.build.directory}/generated-resources/JavaCryptographicArchitecture</directory>
                                     <includes>
                                         <include>**/*.crysl</include>
                                     </includes>
