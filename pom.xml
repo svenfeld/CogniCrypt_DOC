@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.upb.docgen</groupId>
-    <artifactId>DocGen</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.cryptodoc</groupId>
+    <artifactId>CryptoDOC</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -30,7 +30,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>de.upb.docgen.DocumentGeneratorMain</mainClass>
+                            <mainClass>com.cryptodoc.DocumentGeneratorMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -69,7 +69,7 @@
         <dependency>
             <groupId>de.fraunhofer.iem</groupId>
             <artifactId>CryptoAnalysis</artifactId>
-            <version>3.1.1</version>
+            <version>3.2.1</version>
         </dependency>
 
 

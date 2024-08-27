@@ -289,7 +289,7 @@
             </#list>
             <#list rule.constrainedPredicates as cp>${cp}
             </#list>
-            <#list rule.comparsionConstraints as cc>${cc}
+            <#list rule.comparsionConstraints![] as cc>${cc}
             </#list>
             <#list rule.constrainedValueConstraints as cvc>${cvc}
             </#list>

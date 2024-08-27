@@ -1,21 +1,7 @@
-# CogniCrypt_DOC
-This repo contains the implementation of CogniCrypt_DOC. The project generates html-based documentation utilising a domain specific language called CrySL. The master thesis developed a prototype that generates natural language documentation based on CrySL rules and templates. The Bachelor thesis built on top of that prototype to improve the tool and the generated documentation by utilising FTL templates.
+# Crypto_DOC
+This repo contains the implementation of Crypto_DOC. The project generates html-based documentation utilising a domain specific language called CrySL.
 
-The html-based documentation can be found in the zip file `generated_doc_and_code_example`. The entrypoint of the documentation is the `rootpage.html` file.
-
- Bachelor Thesis Topic:
- ```
- Improving Documentation Generation for Cryptographic APIs - A reinterpretation of CogniCryptDOC
- ```
-
-    
- Master Thesis Topic : 
- 
-        CogniCrypt_DOC
-    Transforming API Usage
-    Specification to API Documentation
-
-The "Output" folder contains the generated documentation of the master thesis implementation for each class.
+The html-based documentation can be found in the zip file `generated_doc`. The entrypoint of the documentation is the `rootpage.html` file.
 
 ## Build
 CogniCryptDOC uses Maven as build tool. You can compile and build this project via

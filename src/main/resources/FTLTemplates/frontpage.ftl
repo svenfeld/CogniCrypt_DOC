@@ -92,10 +92,6 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CROSSINGTUD/CryptoAnalysis">CogniCrypt<sub>SAST</sub></a>:
                 Analyse Java code for cryptographic misuses.
             </li>
-            <li><a target="_blank" rel="noopener noreferrer"
-                   href="https://github.com/CROSSINGTUD/CogniCrypt_TESTGEN/tree/develop">CogniCrypt<sub>TESTGEN</sub></a>: Generate
-                test cases.
-            </li>
         </ul>
     </div>
 </div>
