@@ -1,4 +1,4 @@
-package de.upb.userstudy;
+package com.cryptodoc.userstudy;
 
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
