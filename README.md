@@ -4,7 +4,7 @@ This repo contains the implementation of CryptoDOC. The project generates html-b
 The html-based documentation can be found in the zip file `LatestDoc`. The entrypoint of the documentation is the `rootpage.html` file.
 
 ## Build
-CogniCryptDOC uses Maven as build tool. You can compile and build this project via
+CryptoDOC uses Maven as build tool. You can compile and build this project via
 
 ```mvn clean install```
 
