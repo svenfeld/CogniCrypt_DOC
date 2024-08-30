@@ -12,7 +12,7 @@ The jar is found in the generated target folder.
 
 ## Usage
 
-CogniCryptDOC requires four arguments:
+CryptoDOC requires four arguments:
 
 ```
 java -jar <path-to-cryptodoc-jar> 
