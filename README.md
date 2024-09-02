@@ -8,7 +8,7 @@ CryptoDOC uses Maven as build tool. You can compile and build this project via
 
 ```mvn clean install```
 
-The jar is found in the generated target folder.
+The jar is found in the generated target folder. This version is stable on Java11.
 
 ## Usage
 
